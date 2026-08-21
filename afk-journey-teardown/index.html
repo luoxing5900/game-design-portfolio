@@ -16,21 +16,21 @@
 @font-face { font-family: 'JetBrainsMono'; src: url('./_shared/fonts/JetBrainsMono-Bold.ttf') format('truetype'); font-weight: 700; font-display: swap; }
 
 :root {
-  --bg: #0f1117;
-  --bg-elev: #181b24;
-  --bg-card: #1e2230;
-  --border: #2a2f40;
-  --text: #e6e8ef;
-  --text-dim: #9aa0b4;
-  --text-mute: #6b7280;
+  --bg: #f7f8fa;
+  --bg-elev: #ffffff;
+  --bg-card: #ffffff;
+  --border: #e5e7eb;
+  --text: #1f2937;
+  --text-dim: #4b5563;
+  --text-mute: #9ca3af;
   --accent: #7c5cff;
   --accent-2: #22d3ee;
-  --gold: #fbbf24;
-  --green: #34d399;
-  --red: #f87171;
-  --blue: #60a5fa;
-  --purple: #c084fc;
-  --orange: #fb923c;
+  --gold: #f59e0b;
+  --green: #10b981;
+  --red: #ef4444;
+  --blue: #3b82f6;
+  --purple: #8b5cf6;
+  --orange: #f97316;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -151,7 +151,7 @@ body {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 12px;
-  background: linear-gradient(135deg, #fff 0%, var(--accent-2) 100%);
+  background: linear-gradient(135deg, #1f2937 0%, #7c5cff 60%, #22d3ee 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -284,7 +284,7 @@ strong { color: var(--text); font-weight: 600; }
 
 .data-table tr:last-child td { border-bottom: none; }
 
-.data-table tr:hover td { background: var(--bg-elev); }
+.data-table tr:hover td { background: #f9fafb; }
 
 /* ===== DIAGRAM ===== */
 .diagram {
@@ -294,6 +294,7 @@ strong { color: var(--text); font-weight: 600; }
   padding: 24px;
   margin: 20px 0;
   text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
 }
 
 .diagram figcaption {
@@ -316,10 +317,11 @@ strong { color: var(--text); font-weight: 600; }
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 18px;
-  transition: border-color 0.2s;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
 
-.info-card:hover { border-color: var(--accent); }
+.info-card:hover { border-color: var(--accent); box-shadow: 0 4px 12px rgba(124,92,255,0.1); }
 
 .info-card .card-icon {
   width: 40px;
@@ -462,6 +464,7 @@ strong { color: var(--text); font-weight: 600; }
   border-radius: 8px;
   padding: 14px;
   text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
 
 .stat-val {
@@ -1252,14 +1255,14 @@ flowchart TB
 <script>
 mermaid.initialize({
   startOnLoad: true,
-  theme: 'dark',
+  theme: 'default',
   themeVariables: {
-    primaryColor: '#1e2230',
-    primaryTextColor: '#e6e8ef',
+    primaryColor: '#f0edff',
+    primaryTextColor: '#1f2937',
     primaryBorderColor: '#7c5cff',
     lineColor: '#7c5cff',
-    secondaryColor: '#181b24',
-    tertiaryColor: '#2a2f40',
+    secondaryColor: '#f7f8fa',
+    tertiaryColor: '#e5e7eb',
     fontFamily: 'Outfit, sans-serif',
   }
 });
