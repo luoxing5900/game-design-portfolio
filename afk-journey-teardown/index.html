@@ -1254,7 +1254,7 @@ flowchart TB
 
 <script>
 mermaid.initialize({
-  startOnLoad: true,
+  startOnLoad: false,
   theme: 'default',
   themeVariables: {
     primaryColor: '#f0edff',
@@ -1265,6 +1265,9 @@ mermaid.initialize({
     tertiaryColor: '#e5e7eb',
     fontFamily: 'Outfit, sans-serif',
   }
+});
+document.addEventListener('DOMContentLoaded', function() {
+  mermaid.run({ querySelector: '.mermaid' });
 });
 
 // Reading progress
