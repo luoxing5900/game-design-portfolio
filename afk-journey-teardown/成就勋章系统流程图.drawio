@@ -1,0 +1,267 @@
+<mxfile host="Electron">
+  <diagram name="第 1 页" id="SACSEioEYkNqgSzPe9Qm">
+    <mxGraphModel dx="2544" dy="1043" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-4" edge="1" parent="1" source="SxDWIAHKsgQbPPMbmREi-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=flexArrow;" target="SxDWIAHKsgQbPPMbmREi-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-10" connectable="0" parent="SxDWIAHKsgQbPPMbmREi-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="信赖度达到4000" vertex="1">
+          <mxGeometry relative="1" x="-0.02" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="提高英雄信赖度" vertex="1">
+          <mxGeometry height="60" width="120" x="160" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-6" edge="1" parent="1" source="SxDWIAHKsgQbPPMbmREi-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=flexArrow;" target="SxDWIAHKsgQbPPMbmREi-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-11" connectable="0" parent="SxDWIAHKsgQbPPMbmREi-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="完成挑战任务" vertex="1">
+          <mxGeometry relative="1" x="-0.0509" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-16" edge="1" parent="1" source="SxDWIAHKsgQbPPMbmREi-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="SxDWIAHKsgQbPPMbmREi-17" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="解锁成就勋章挑战" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-25" edge="1" parent="1" source="SxDWIAHKsgQbPPMbmREi-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="SxDWIAHKsgQbPPMbmREi-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-32" edge="1" parent="1" source="SxDWIAHKsgQbPPMbmREi-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;" target="SxDWIAHKsgQbPPMbmREi-31" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="解锁铭记之石" vertex="1">
+          <mxGeometry height="60" width="120" x="620" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-8" edge="1" parent="1" source="SxDWIAHKsgQbPPMbmREi-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=flexArrow;" target="SxDWIAHKsgQbPPMbmREi-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-9" connectable="0" parent="SxDWIAHKsgQbPPMbmREi-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="获取信赖度礼物" vertex="1">
+          <mxGeometry relative="1" x="0.024" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="大世界探索和活动任务" vertex="1">
+          <mxGeometry height="60" width="120" x="-70" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-13" edge="1" parent="1" source="SxDWIAHKsgQbPPMbmREi-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=flexArrow;" target="SxDWIAHKsgQbPPMbmREi-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-14" connectable="0" parent="SxDWIAHKsgQbPPMbmREi-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="解锁英雄" vertex="1">
+          <mxGeometry relative="1" x="-0.0294" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="抽卡、商店" vertex="1">
+          <mxGeometry height="60" width="120" x="-70" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-17" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="涉及玩法" vertex="1">
+          <mxGeometry height="600" width="440" x="110" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-64" parent="SxDWIAHKsgQbPPMbmREi-17" style="swimlane;whiteSpace=wrap;html=1;" value="PVP玩法" vertex="1">
+          <mxGeometry height="170" width="190" x="230" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-67" edge="1" parent="SxDWIAHKsgQbPPMbmREi-64" source="SxDWIAHKsgQbPPMbmREi-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="SxDWIAHKsgQbPPMbmREi-66" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-65" parent="SxDWIAHKsgQbPPMbmREi-64" style="rounded=0;whiteSpace=wrap;html=1;" value="战斗结算" vertex="1">
+          <mxGeometry height="35" width="70" x="10" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-69" edge="1" parent="SxDWIAHKsgQbPPMbmREi-64" source="SxDWIAHKsgQbPPMbmREi-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="SxDWIAHKsgQbPPMbmREi-68" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-66" parent="SxDWIAHKsgQbPPMbmREi-64" style="rounded=0;whiteSpace=wrap;html=1;" value="记录对局数据" vertex="1">
+          <mxGeometry height="35" width="70" x="110" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-68" parent="SxDWIAHKsgQbPPMbmREi-64" style="rounded=0;whiteSpace=wrap;html=1;" value="更新任务进度" vertex="1">
+          <mxGeometry height="35" width="70" x="60" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-78" parent="SxDWIAHKsgQbPPMbmREi-17" style="swimlane;whiteSpace=wrap;html=1;" value="异界挑战" vertex="1">
+          <mxGeometry height="170" width="190" x="20" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-79" edge="1" parent="SxDWIAHKsgQbPPMbmREi-78" source="SxDWIAHKsgQbPPMbmREi-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="SxDWIAHKsgQbPPMbmREi-82" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-80" parent="SxDWIAHKsgQbPPMbmREi-78" style="rounded=0;whiteSpace=wrap;html=1;" value="战斗结算" vertex="1">
+          <mxGeometry height="35" width="70" x="10" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-81" edge="1" parent="SxDWIAHKsgQbPPMbmREi-78" source="SxDWIAHKsgQbPPMbmREi-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="SxDWIAHKsgQbPPMbmREi-83" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-82" parent="SxDWIAHKsgQbPPMbmREi-78" style="rounded=0;whiteSpace=wrap;html=1;" value="记录对局数据" vertex="1">
+          <mxGeometry height="35" width="70" x="110" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-83" parent="SxDWIAHKsgQbPPMbmREi-78" style="rounded=0;whiteSpace=wrap;html=1;" value="更新任务进度" vertex="1">
+          <mxGeometry height="35" width="70" x="60" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-84" parent="SxDWIAHKsgQbPPMbmREi-17" style="swimlane;whiteSpace=wrap;html=1;" value="荣誉对决" vertex="1">
+          <mxGeometry height="170" width="190" x="20" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-85" edge="1" parent="SxDWIAHKsgQbPPMbmREi-84" source="SxDWIAHKsgQbPPMbmREi-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="SxDWIAHKsgQbPPMbmREi-88" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-86" parent="SxDWIAHKsgQbPPMbmREi-84" style="rounded=0;whiteSpace=wrap;html=1;" value="战斗结算" vertex="1">
+          <mxGeometry height="35" width="70" x="10" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-87" edge="1" parent="SxDWIAHKsgQbPPMbmREi-84" source="SxDWIAHKsgQbPPMbmREi-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="SxDWIAHKsgQbPPMbmREi-89" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-88" parent="SxDWIAHKsgQbPPMbmREi-84" style="rounded=0;whiteSpace=wrap;html=1;" value="记录对局数据" vertex="1">
+          <mxGeometry height="35" width="70" x="110" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-89" parent="SxDWIAHKsgQbPPMbmREi-84" style="rounded=0;whiteSpace=wrap;html=1;" value="更新任务进度" vertex="1">
+          <mxGeometry height="35" width="70" x="60" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-91" parent="SxDWIAHKsgQbPPMbmREi-17" style="swimlane;whiteSpace=wrap;html=1;" value="家园系统" vertex="1">
+          <mxGeometry height="170" width="190" x="230" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-92" edge="1" parent="SxDWIAHKsgQbPPMbmREi-91" source="SxDWIAHKsgQbPPMbmREi-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="SxDWIAHKsgQbPPMbmREi-95" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-93" parent="SxDWIAHKsgQbPPMbmREi-91" style="rounded=0;whiteSpace=wrap;html=1;" value="家园生产" vertex="1">
+          <mxGeometry height="35" width="70" x="10" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-94" edge="1" parent="SxDWIAHKsgQbPPMbmREi-91" source="SxDWIAHKsgQbPPMbmREi-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="SxDWIAHKsgQbPPMbmREi-96" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-95" parent="SxDWIAHKsgQbPPMbmREi-91" style="rounded=0;whiteSpace=wrap;html=1;" value="记录英雄特效触发次数" vertex="1">
+          <mxGeometry height="35" width="70" x="110" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-96" parent="SxDWIAHKsgQbPPMbmREi-91" style="rounded=0;whiteSpace=wrap;html=1;" value="更新任务进度" vertex="1">
+          <mxGeometry height="35" width="70" x="60" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-104" parent="SxDWIAHKsgQbPPMbmREi-17" style="swimlane;whiteSpace=wrap;html=1;" value="钓鱼" vertex="1">
+          <mxGeometry height="170" width="320" x="20" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-105" edge="1" parent="SxDWIAHKsgQbPPMbmREi-104" source="SxDWIAHKsgQbPPMbmREi-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="SxDWIAHKsgQbPPMbmREi-108" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-106" parent="SxDWIAHKsgQbPPMbmREi-104" style="rounded=0;whiteSpace=wrap;html=1;" value="大世界钓鱼" vertex="1">
+          <mxGeometry height="35" width="70" x="10" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-111" edge="1" parent="SxDWIAHKsgQbPPMbmREi-104" source="SxDWIAHKsgQbPPMbmREi-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="SxDWIAHKsgQbPPMbmREi-110" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-108" parent="SxDWIAHKsgQbPPMbmREi-104" style="rounded=0;whiteSpace=wrap;html=1;" value="记录上鱼品质" vertex="1">
+          <mxGeometry height="35" width="70" x="110" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-109" parent="SxDWIAHKsgQbPPMbmREi-104" style="rounded=0;whiteSpace=wrap;html=1;" value="更新任务进度" vertex="1">
+          <mxGeometry height="35" width="70" x="60" y="103.75" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-113" edge="1" parent="SxDWIAHKsgQbPPMbmREi-104" source="SxDWIAHKsgQbPPMbmREi-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="SxDWIAHKsgQbPPMbmREi-112" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-115" connectable="0" parent="SxDWIAHKsgQbPPMbmREi-113" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="是" vertex="1">
+          <mxGeometry relative="1" x="-0.6969" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-110" parent="SxDWIAHKsgQbPPMbmREi-104" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" value="品质是否达标" vertex="1">
+          <mxGeometry height="47.5" width="80" x="210" y="28.75" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-114" edge="1" parent="SxDWIAHKsgQbPPMbmREi-104" source="SxDWIAHKsgQbPPMbmREi-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="SxDWIAHKsgQbPPMbmREi-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-116" connectable="0" parent="SxDWIAHKsgQbPPMbmREi-114" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="是" vertex="1">
+          <mxGeometry relative="1" x="-0.0571" y="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-112" parent="SxDWIAHKsgQbPPMbmREi-104" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" value="目标英雄是否位于冒险小队" vertex="1">
+          <mxGeometry height="47.5" width="80" x="210" y="97.5" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-24" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="涉及数据" vertex="1">
+          <mxGeometry height="335" width="440" x="580" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-37" parent="SxDWIAHKsgQbPPMbmREi-24" style="rounded=0;whiteSpace=wrap;html=1;" value="终极技能释放次数" vertex="1">
+          <mxGeometry height="30" width="120" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-38" parent="SxDWIAHKsgQbPPMbmREi-24" style="rounded=0;whiteSpace=wrap;html=1;" value="终极技能击杀数" vertex="1">
+          <mxGeometry height="30" width="120" x="20" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-39" parent="SxDWIAHKsgQbPPMbmREi-24" style="rounded=0;whiteSpace=wrap;html=1;" value="累计击杀数" vertex="1">
+          <mxGeometry height="30" width="120" x="20" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-40" parent="SxDWIAHKsgQbPPMbmREi-24" style="rounded=0;whiteSpace=wrap;html=1;" value="累计助攻次数" vertex="1">
+          <mxGeometry height="30" width="120" x="20" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-41" parent="SxDWIAHKsgQbPPMbmREi-24" style="rounded=0;whiteSpace=wrap;html=1;" value="最佳评价获得次数" vertex="1">
+          <mxGeometry height="30" width="120" x="20" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-42" parent="SxDWIAHKsgQbPPMbmREi-24" style="rounded=0;whiteSpace=wrap;html=1;" value="最高单局治疗量" vertex="1">
+          <mxGeometry height="30" width="120" x="300" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-43" parent="SxDWIAHKsgQbPPMbmREi-24" style="rounded=0;whiteSpace=wrap;html=1;" value="最高单局护盾量" vertex="1">
+          <mxGeometry height="30" width="120" x="300" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-44" parent="SxDWIAHKsgQbPPMbmREi-24" style="rounded=0;whiteSpace=wrap;html=1;" value="累计治疗总量" vertex="1">
+          <mxGeometry height="30" width="120" x="160" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-48" parent="SxDWIAHKsgQbPPMbmREi-24" style="rounded=0;whiteSpace=wrap;html=1;" value="累计护盾总量" vertex="1">
+          <mxGeometry height="30" width="120" x="160" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-51" parent="SxDWIAHKsgQbPPMbmREi-24" style="rounded=0;whiteSpace=wrap;html=1;" value="累计施加护盾总量" vertex="1">
+          <mxGeometry height="30" width="120" x="160" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-55" parent="SxDWIAHKsgQbPPMbmREi-24" style="rounded=0;whiteSpace=wrap;html=1;" value="最高单局控制时长" vertex="1">
+          <mxGeometry height="30" width="120" x="160" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-56" parent="SxDWIAHKsgQbPPMbmREi-24" style="rounded=0;whiteSpace=wrap;html=1;" value="累计控制时长" vertex="1">
+          <mxGeometry height="30" width="120" x="160" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-59" parent="SxDWIAHKsgQbPPMbmREi-24" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="英雄特色数据" vertex="1">
+          <mxGeometry height="150" width="120" x="300" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-60" parent="SxDWIAHKsgQbPPMbmREi-59" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="累计复活次数" vertex="1">
+          <mxGeometry height="30" width="120" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-61" parent="SxDWIAHKsgQbPPMbmREi-59" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="累计召唤物数量" vertex="1">
+          <mxGeometry height="30" width="120" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-62" parent="SxDWIAHKsgQbPPMbmREi-59" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="累计打断次数" vertex="1">
+          <mxGeometry height="30" width="120" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-63" parent="SxDWIAHKsgQbPPMbmREi-59" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="技能单局最高持续时长" vertex="1">
+          <mxGeometry height="30" width="120" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-103" edge="1" parent="1" source="SxDWIAHKsgQbPPMbmREi-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="SxDWIAHKsgQbPPMbmREi-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="PVP玩法" vertex="1">
+          <mxGeometry height="60" width="120" x="620" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;仅计算自身施加给自身的护盾量，不计算施加给其他友方或其他友方施加给自身的护盾量&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="160" x="1060" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-47" edge="1" parent="1" source="SxDWIAHKsgQbPPMbmREi-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF0000;" target="SxDWIAHKsgQbPPMbmREi-46" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-97" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="记录流程" vertex="1">
+          <mxGeometry height="170" width="190" x="827" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-98" edge="1" parent="SxDWIAHKsgQbPPMbmREi-97" source="SxDWIAHKsgQbPPMbmREi-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="SxDWIAHKsgQbPPMbmREi-101" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-99" parent="SxDWIAHKsgQbPPMbmREi-97" style="rounded=0;whiteSpace=wrap;html=1;" value="战斗结算" vertex="1">
+          <mxGeometry height="35" width="70" x="10" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-100" edge="1" parent="SxDWIAHKsgQbPPMbmREi-97" source="SxDWIAHKsgQbPPMbmREi-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="SxDWIAHKsgQbPPMbmREi-102" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-101" parent="SxDWIAHKsgQbPPMbmREi-97" style="rounded=0;whiteSpace=wrap;html=1;" value="记录对局数据" vertex="1">
+          <mxGeometry height="35" width="70" x="110" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="SxDWIAHKsgQbPPMbmREi-102" parent="SxDWIAHKsgQbPPMbmREi-97" style="rounded=0;whiteSpace=wrap;html=1;" value="更新铭记之石数据" vertex="1">
+          <mxGeometry height="35" width="70" x="60" y="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
