@@ -1120,9 +1120,14 @@ mermaid.initialize({
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  mermaid.run({ querySelector: '.mermaid' });
-});
+function runMermaid() {
+  mermaid.run({ querySelector: '.mermaid' }).catch(function(e) { console.error('Mermaid error:', e); });
+}
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', runMermaid);
+} else {
+  runMermaid();
+}
 
 // Reading progress
 window.addEventListener('scroll', function() {

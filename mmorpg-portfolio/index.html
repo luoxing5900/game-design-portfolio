@@ -1870,9 +1870,14 @@ flowchart LR
 <script src="./_shared/js/mermaid.min.js"></script>
 <script>
   mermaid.initialize({ startOnLoad: false, theme: 'neutral', securityLevel: 'loose' });
-  document.addEventListener('DOMContentLoaded', function() {
-    mermaid.run({ querySelector: '.mermaid' });
-  });
+  function runMermaid() {
+    mermaid.run({ querySelector: '.mermaid' }).catch(function(e) { console.error('Mermaid render error:', e); });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', runMermaid);
+  } else {
+    runMermaid();
+  }
 </script>
 </body>
 </html>
