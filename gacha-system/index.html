@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>转盘抽卡系统 — 设计文档与可玩DEMO</title>
+<style>
+:root{
+  --bg:#f7f8fa; --bg2:#ffffff; --ink:#1a1d27; --muted:#5b6472; --rule:#e4e7ee;
+  --accent:#4f6bed; --accent-soft:rgba(79,107,237,0.08); --gold:#f59e0b; --green:#10b981;
+  --red:#ef4444; --purple:#7c3aed;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'PingFang SC','Microsoft YaHei',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+:target{scroll-margin-top:90px}
+
+/* AI Source Banner */
+.src-banner{font-family:system-ui,sans-serif;background:linear-gradient(135deg,#eef2ff,#f5f3ff);border-bottom:1px solid #c7d2fe;color:#312e81;font-size:13px;padding:10px 16px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;text-align:center}
+.src-banner .dl-wrap{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.src-banner a.dl{display:inline-flex;align-items:center;gap:5px;padding:4px 14px;border-radius:999px;background:#4f46e5;color:#fff;font-weight:600;font-size:13px;transition:.2s}
+.src-banner a.dl.build{background:#0ea5e9}
+.src-banner a.dl:hover{transform:translateY(-1px);box-shadow:0 4px 10px rgba(79,70,229,.25)}
+
+/* Hero */
+.hero{background:linear-gradient(140deg,#123,#1e3a8a 55%,#4f46e5);color:#fff;padding:72px 0 60px;text-align:center}
+.hero .tag{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.25);padding:4px 14px;border-radius:999px;font-size:13px;letter-spacing:.5px;margin-bottom:18px}
+.hero h1{font-size:42px;font-weight:800;letter-spacing:1px}
+.hero .subtitle{margin-top:12px;font-size:17px;color:rgba(255,255,255,.82);max-width:680px;margin-left:auto;margin-right:auto}
+.hero .meta{border-top:1px solid rgba(255,255,255,.18);margin-top:34px;padding-top:26px;display:flex;justify-content:center;gap:40px;flex-wrap:wrap;font-size:14px;color:rgba(255,255,255,.85)}
+.hero .meta b{display:block;font-size:19px;color:#fff;font-weight:700}
+
+/* Section */
+section{background:var(--bg2);border:1px solid var(--rule);border-radius:16px;padding:34px 34px;margin:26px 0;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.sec-head{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.sec-num{background:linear-gradient(135deg,var(--accent),var(--purple));color:#fff;font-size:13px;font-weight:700;padding:5px 12px;border-radius:8px}
+.sec-head h2{font-size:24px;font-weight:800}
+.sec-desc{color:var(--muted);font-size:14px;margin:-12px 0 20px}
+
+/* Cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.fcard{background:#f8faff;border:1px solid var(--rule);border-radius:12px;padding:18px;transition:.2s}
+.fcard:hover{border-color:var(--accent);box-shadow:0 6px 16px rgba(79,107,237,.10);transform:translateY(-2px)}
+.fcard .ic{font-size:26px;margin-bottom:10px}
+.fcard h4{font-size:16px;font-weight:700;margin-bottom:6px}
+.fcard p{font-size:13.5px;color:var(--muted)}
+
+/* STAR */
+.star{display:grid;gap:14px}
+.star-item{display:flex;gap:14px;background:#f8faff;border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:10px;padding:16px 18px}
+.star-label{flex:0 0 28px;height:28px;background:var(--accent);color:#fff;font-weight:700;font-size:15px;border-radius:8px;display:flex;align-items:center;justify-content:center}
+.star-item h4{font-size:15px;font-weight:700;margin-bottom:4px}
+.star-item p{font-size:14px;color:var(--muted)}
+
+/* Pity list */
+.plist{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.pcard{border:1px solid var(--rule);border-radius:12px;padding:16px 18px;background:#fff}
+.pcard .pname{font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.pcard .pnum{font-size:24px;font-weight:800;color:var(--accent)}
+.pcard .punit{font-size:12px;color:var(--muted);font-weight:400;margin-left:4px}
+.pcard p{font-size:13px;color:var(--muted)}
+
+/* Flowchart */
+.flow-img{width:100%;max-width:520px;margin:0 auto;display:block;border:1px solid var(--rule);border-radius:12px;background:#fff}
+.fig-cap{text-align:center;color:var(--muted);font-size:13px;margin-top:10px}
+
+/* Downloads */
+.dl-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.dl-card{display:flex;align-items:center;gap:14px;background:#f8faff;border:1px solid var(--rule);border-radius:12px;padding:16px;transition:.2s}
+.dl-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 6px 16px rgba(79,107,237,.10)}
+.dl-card .dl-ic{font-size:26px}
+.dl-card .dl-info{flex:1}
+.dl-card .dl-name{font-weight:700;font-size:15px}
+.dl-card .dl-meta{font-size:12.5px;color:var(--muted)}
+.dl-card a.dl-btn{background:var(--accent);color:#fff;font-size:13px;font-weight:600;padding:7px 14px;border-radius:8px;white-space:nowrap}
+.dl-card a.dl-btn.green{background:var(--green)}
+.dl-card a.dl-btn.blue{background:#0ea5e9}
+
+.footer{text-align:center;color:var(--muted);font-size:13px;padding:28px 0 40px}
+.footer a{color:var(--accent)}
+
+@media(max-width:600px){.hero h1{font-size:30px}.hero .meta{gap:20px}}
+</style>
+</head>
+<body>
+
+<!-- AI Source Banner + Download -->
+<div class="src-banner">
+  <span>本页面由 AI 参考原文档《抽卡系统_v5.pdf》生成，仅供在线浏览。</span>
+  <span class="dl-wrap">
+    <a class="dl" href="抽卡系统_v5.pdf" download>⬇ 下载原文档 PDF</a>
+    <a class="dl build" href="Build.zip" download>⬇ 下载 Build 试玩包</a>
+  </span>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <span class="tag">自研系统 · 可玩 DEMO</span>
+    <h1>转盘抽卡系统</h1>
+    <p class="subtitle">五类卡池 × 三类资源经济 × 分池双保底 · "设计—配置—验证—可玩"全链路自研交付</p>
+    <div class="meta">
+      <div><b>调试于</b>Godot 4.6.3</div>
+      <div><b>仿真</b>蒙特卡洛 ×10000</div>
+      <div><b>驱动</b>6 张配置表</div>
+      <div><b>交付</b>文档 + 配置表 + DEMO</div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- 01 项目概览 -->
+  <section id="sec1">
+    <div class="sec-head"><span class="sec-num">01</span><h2>项目概览</h2></div>
+    <p class="sec-desc">求职系统策划作品：自研一套可落地、可验证、可玩的抽卡系统框架</p>
+    <div class="star">
+      <div class="star-item"><span class="star-label">S</span><div><h4>背景 Situation</h4><p>求职系统策划，需体现数值建模与资源经济全链路能力；市面上常见抽卡方案卡池单一、缺乏体系化设计。</p></div></div>
+      <div class="star-item"><span class="star-label">T</span><div><h4>任务 Task</h4><p>从零自研可落地的抽卡系统框架，并交付可玩 DEMO 验证设计。</p></div></div>
+      <div class="star-item"><span class="star-label">A</span><div><h4>行动 Action</h4><p>设计五类卡池与三类资源经济；建立分池保底；蒙特卡洛仿真 10000 次验证综合概率与大保底触发率；"结果先行"随机方案 + 6 张配置表驱动盘面与奖池版本化；Godot 4.6.3 独立开发可玩 DEMO。</p></div></div>
+      <div class="star-item"><span class="star-label">R</span><div><h4>结果 Result</h4><p>交付完整设计文档、配置表、仿真曲线与可玩 DEMO，形成"设计—配置—验证—可玩"闭环。</p></div></div>
+    </div>
+  </section>
+
+  <!-- 02 系统亮点 -->
+  <section id="sec2">
+    <div class="sec-head"><span class="sec-num">02</span><h2>系统设计亮点</h2></div>
+    <p class="sec-desc">四大核心设计支撑抽卡系统从框架到可玩落地</p>
+    <div class="grid">
+      <div class="fcard"><div class="ic">🃏</div><h4>五类卡池</h4><p>普池 / 自选 / 年限 / UP 池分层设计，覆盖不同付费与成长阶段。</p></div>
+      <div class="fcard"><div class="ic">💰</div><h4>三类资源经济</h4><p>一类券养留存、二类券作核心付费、三类券担周年联动冲刺，活动结束自动结转货币。</p></div>
+      <div class="fcard"><div class="ic">🎯</div><h4>节点集中消费</h4><p>形成"节点集中消费 + 长线囤积"闭环的货币经济循环。</p></div>
+      <div class="fcard"><div class="ic">🔢</div><h4>数值仿真验证</h4><p>蒙特卡洛仿真 10000 次，综合概率与大保底触发率与公示口径自洽。</p></div>
+    </div>
+  </section>
+
+  <!-- 03 分池保底 -->
+  <section id="sec3">
+    <div class="sec-head"><span class="sec-num">03</span><h2>分池保底设计</h2></div>
+    <p class="sec-desc">按不同卡池区分保底门槛，兼顾稳定预期与付费节奏</p>
+    <div class="plist">
+      <div class="pcard"><div class="pname">普池 / 自选 / 年限<span class="punit">硬保底</span></div><div class="pnum">90<span class="punit">抽</span></div><p>90 抽硬保底，超出后必出高级物品，保障体验下限。</p></div>
+      <div class="pcard"><div class="pname">UP 池<span class="punit">小保底 / 大保底</span></div><div class="pnum">60 · 120<span class="punit">抽</span></div><p>60 抽小保底、120 抽大保底，双段保障 UP 目标。</p></div>
+      <div class="pcard"><div class="pname">紫色保底<span class="punit">固定</span></div><div class="pnum">10<span class="punit">抽</span></div><p>紫色品质 10 抽保底，稳定中端奖励节奏。</p></div>
+      <div class="pcard"><div class="pname">软保底曲线<span class="punit">指数 · 系数 3.5</span></div><div class="pnum" style="color:var(--green)">软保底</div><p>指数软保底（3.5）按池区分起点，命中前概率平滑抬升。</p></div>
+    </div>
+  </section>
+
+  <!-- 04 抽卡流程 -->
+  <section id="sec4">
+    <div class="sec-head"><span class="sec-num">04</span><h2>抽卡流程与概率引擎</h2></div>
+    <p class="sec-desc">"结果先行"随机方案：双保底计数器（金 / 紫）独立结算，命中后各自重置</p>
+    <img class="flow-img" src="抽卡系统流程图.png" alt="抽卡系统流程图">
+    <p class="fig-cap">▲ 抽卡系统概率引擎核心流程（软保底 + 双硬保底 + UP 判定）</p>
+  </section>
+
+  <!-- 05 资源下载 -->
+  <section id="sec5">
+    <div class="sec-head"><span class="sec-num">05</span><h2>设计资源下载</h2></div>
+    <p class="sec-desc">原文档（PDF）、配置表、试玩包与流程图均可一键下载</p>
+    <div class="dl-grid">
+      <div class="dl-card">
+        <div class="dl-ic">📕</div>
+        <div class="dl-info"><div class="dl-name">抽卡系统策划文档</div><div class="dl-meta">PDF · 0.88 MB · 原文档</div></div>
+        <a class="dl-btn" href="抽卡系统_v5.pdf" download>下载</a>
+      </div>
+      <div class="dl-card">
+        <div class="dl-ic">🎮</div>
+        <div class="dl-info"><div class="dl-name">可玩 DEMO 试玩包</div><div class="dl-meta">ZIP · 30.9 MB · Godot Build</div></div>
+        <a class="dl-btn blue" href="Build.zip" download>下载</a>
+      </div>
+      <div class="dl-card">
+        <div class="dl-ic">📊</div>
+        <div class="dl-info"><div class="dl-name">配置表示例</div><div class="dl-meta">XLSX · 配置表驱动</div></div>
+        <a class="dl-btn green" href="配置表示例.xlsx" download>下载</a>
+      </div>
+      <div class="dl-card">
+        <div class="dl-ic">🗂️</div>
+        <div class="dl-info"><div class="dl-name">抽卡系统流程图</div><div class="dl-meta">PNG · 流程示意</div></div>
+        <a class="dl-btn" href="抽卡系统流程图.png" download>下载</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="footer">
+  <p>© Game System Portfolio · 抽卡系统 · <a href="../index.html">← 返回作品集首页</a></p>
+</div>
+
+</body>
+</html>
